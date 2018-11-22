@@ -1,6 +1,6 @@
 $Preload = {
     Clear-Host
-    [Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("utf-8")
+    [Console]::OutputEncoding = [System.Text.Encoding]::GetEncoding("UTF-8")
     $Host.UI.RawUI.WindowTitle = "NanoQES"
     $Host.UI.RawUI.BackgroundColor = "Black"
     $Host.UI.RawUI.ForegroundColor = "Blue"
@@ -231,4 +231,4 @@ $Invvalue = {
     Read-Host "$l14"
     .$Start
 }
-&$Preload
+.$Preload
