@@ -78,7 +78,7 @@ $Lang = {
 }
 $About = {
     Clear-Host
-    [string]$ver = "v2.0.0"
+    [string]$ver = "v2.0.1"
     Write-Host "$l1"
     Write-Host "$l2"
     Write-Host "$l3"
@@ -182,7 +182,7 @@ $Advanced = {
         Write-Host "   X1 = (-b+√D)/2a = (-$alias_b + $dsqrt)/2·$alias_a = $mbpdsqrt/$alias_txa = $xfirst"
         Write-Host "`n"
         Write-Host "   X2 = (-b-√D)/2a = (-$alias_b - $dsqrt)/2·$alias_a = $mbmdsqrt/$alias_txa = $xsecond"
-        &$Askadv
+        .$Askadv
     }
     if($d -eq 0){
         Write-Host "`n"
@@ -193,14 +193,14 @@ $Advanced = {
         Write-Host "$l21"
         Write-Host "`n"
         Write-Host "   X = -(b/(2a)) = -($b/(2·$alias_a)) = -($b/$alias_txa) = $xfirst"
-        &$Askadv
+        .$Askadv
     }
     if($d -lt 0){
         Write-Host "`n"
         Write-Host "   D = b²-4ac = $alias_b²-4·$alias_a·$alias_c = $bs-$alias_fxac = $d < 0"
         Write-Host "`n"
         Write-Host "$l22"
-        &$Askadv
+        .$Askadv
     }
 }
 $Ask = {
